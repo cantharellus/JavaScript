@@ -1,7 +1,12 @@
-// My attempt to create the rock paper scissors game usings javascript
+<html>
+<body>
+</body>
+<script>
 
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 var computerChoice = Math.random();
+
+console.log(computerChoice);
 
 if (computerChoice < 0.34)
 {
@@ -21,40 +26,42 @@ var compare = function(choice1, choice2)
 {
     if (choice1 === choice2)
     {
-        return "The result is a tie!";
+        console.log("The result is a tie!");
     }
         else if (choice1 === "rock")
         {
             if (choice2 === "scissors")
             {
-                return "rock wins";
+                console.log("rock wins");
             }
             else
             {
-                return "paper wins";
+                console.log("paper wins");
             }
         }
         else if (choice1 === "paper")
         {
             if (choice2 === "rock")
             {
-                return "paper wins";
+                console.log("paper wins");
             }
             else
             {
-                return "scissors wins";
+                console.log("scissors wins");
             }
         }
         else if (choice1 === "scissors")
         {
             if (choice2 === "rock")
             {
-                return "rock wins";
+                console.log("rock wins");
             }
             else
             {
-                return "scissors wins";
+                console.log("scissors wins");
             }
         }
 };
-compare(userChoice, computerChoice); 
+compare(userChoice, computerChoice);
+</script>
+</html>
